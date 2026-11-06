@@ -24,7 +24,8 @@
     "name": "Exa",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "recurring",
     "allowance": "$10/month plus a one-time $10 onboarding bonus.",
@@ -44,7 +45,8 @@
     "name": "Firecrawl",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "recurring",
     "allowance": "1,000 credits/month: up to 500 searches or 1,000 scraped pages.",
@@ -63,7 +65,8 @@
     "id": "jina-reader",
     "name": "Jina Reader (no key)",
     "categories": [
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "ongoing",
     "allowance": "20 requests/minute without an API key.",
@@ -84,7 +87,8 @@
     "categories": [
       "web-search",
       "web-scraping",
-      "embeddings"
+      "embeddings",
+      "url-fetch"
     ],
     "offer": "trial",
     "allowance": "New keys include 10M free tokens shared across products; expiry not confirmed.",
@@ -221,20 +225,22 @@
     "id": "nimble",
     "name": "Nimble",
     "categories": [
-      "web-search"
+      "web-search",
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "recurring",
-    "allowance": "5,000 requests/month.",
+    "allowance": "5,000 free requests/month; the free tier advertises access to all APIs.",
     "registration": "required",
     "credit_card": "not-required",
     "eligibility": "Not confirmed; consult provider signup and regional terms.",
     "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Search, extraction and structured output; confirm SDK and Web Search Agents availability.",
+    "notes": "Search, Extract, Crawl and Map are available. Do not assume the monthly balance is independently repeated for every endpoint.",
     "sources": [
       "https://www.nimbleway.com/pricing"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "you",
@@ -260,7 +266,8 @@
     "id": "parallel",
     "name": "Parallel Developer API",
     "categories": [
-      "web-search"
+      "web-search",
+      "url-fetch"
     ],
     "offer": "recurring",
     "allowance": "$5/month per eligible organization, covering up to 5,000 Search or Extract requests.",
@@ -280,39 +287,42 @@
     "id": "linkup",
     "name": "Linkup",
     "categories": [
-      "web-search"
+      "web-search",
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "recurring",
-    "allowance": "4,000 credits/month.",
+    "allowance": "Eligible accounts topped back up to $20/month (about 4,000 raw standard/fast searches).",
     "registration": "required",
     "credit_card": "unknown",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Standard and deep search have different costs.",
+    "eligibility": "Sign up with a professional email; monthly refills apply to eligible accounts.",
+    "overage": "API endpoints deduct from account credits; paid top-ups are separate. Verify spend limits.",
+    "notes": "Working/professional email required for the automatic signup grant. This is a balance refill to $20, not a cumulative $20 monthly bonus. Search, Fetch and Research share funds; deep search and generated answers cost more.",
     "sources": [
-      "https://www.linkup.so"
+      "https://docs.linkup.so/pages/documentation/platform/pricing",
+      "https://www.linkup.so/pricing"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "brightdata",
-    "name": "Bright Data",
+    "name": "Bright Data SERP API",
     "categories": [
       "web-search"
     ],
     "offer": "recurring",
-    "allowance": "5,000 credits/month.",
+    "allowance": "5,000 SERP requests/records per month.",
     "registration": "required",
-    "credit_card": "unknown",
+    "credit_card": "not-required",
     "eligibility": "Not confirmed; consult provider signup and regional terms.",
     "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Proxy-backed search/scraping; verify product-specific offer.",
+    "notes": "Product-specific SERP free tier, not a universal monthly grant for every Bright Data API. Pay-as-you-go pricing and spend limits are separate.",
     "sources": [
-      "https://brightdata.com"
+      "https://brightdata.com/pricing/serp"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "searlo",
@@ -493,7 +503,8 @@
     "name": "UniFuncs",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "none",
     "allowance": "Earlier notes: Web Search/Reader APIs are paid.",
@@ -513,7 +524,8 @@
     "name": "You.com API signup credits",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "trial",
     "allowance": "Conflicting official pages advertise $10 and $100; amount unresolved.",
@@ -534,7 +546,8 @@
     "name": "Parallel Personal MCP",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "ongoing",
     "allowance": "Free personal web search and fetch with variable limits; no fixed public quota.",
@@ -554,7 +567,8 @@
     "name": "Keenable Search API",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "recurring",
     "allowance": "100,000 requests/month per organization; search and fetch each consume one credit.",
@@ -575,7 +589,8 @@
     "name": "Keenable keyless access",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "ongoing",
     "allowance": "Shared pool of 1,000 requests/hour per IP per endpoint; 10 RPS.",
@@ -596,7 +611,8 @@
     "name": "Search1API",
     "categories": [
       "web-search",
-      "web-scraping"
+      "web-scraping",
+      "url-fetch"
     ],
     "offer": "trial",
     "allowance": "100 signup credits, no expiry; no monthly replenishment.",
@@ -811,6 +827,780 @@
     "sources": [
       "https://www.ceramic.ai/pricing",
       "https://docs.ceramic.ai/api/search/quickstart"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "brightdata-mcp",
+    "name": "Bright Data MCP",
+    "categories": [
+      "web-search",
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "recurring",
+    "allowance": "5,000 MCP requests/month.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "MCP route; do not add this to a SERP API quota without confirming account pool sharing.",
+    "sources": [
+      "https://brightdata.com/ai/mcp-server"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "tinysearch",
+    "name": "TinyFish TinySearch",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "ongoing",
+    "allowance": "Free: 30 requests/minute and 500 requests/hour.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Free endpoint limits apply; Wallet-funded products are metered separately.",
+    "notes": "TinySearch remains free at any Wallet balance. TinyAgent, TinyBrowser and monitoring are separate paid products.",
+    "sources": [
+      "https://www.tinyfish.ai/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "tinyfetch",
+    "name": "TinyFish TinyFetch",
+    "categories": [
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "ongoing",
+    "allowance": "Free: 150 URLs/minute and 1,000 URLs/day.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Free URL limits apply; other TinyFish products can consume paid Wallet funds.",
+    "notes": "Renders JavaScript pages and returns Markdown, HTML or JSON. No funded Wallet is required for TinyFetch.",
+    "sources": [
+      "https://www.tinyfish.ai/pricing",
+      "https://www.tinyfish.ai/fetch"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "browserbase",
+    "name": "Browserbase Free Plan",
+    "categories": [
+      "web-search",
+      "url-fetch",
+      "web-scraping",
+      "browser-infrastructure"
+    ],
+    "offer": "ongoing",
+    "allowance": "Free plan includes 1,000 Search calls, 1,000 Fetch calls and 1 browser hour.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Free-plan exhaustion behavior and optional paid settings need confirmation.",
+    "notes": "Browser time resets monthly. The reviewed pricing page does not explicitly establish Search/Fetch replenishment cadence. Three concurrent browsers and 15-minute sessions; Fetch does not execute JavaScript and has a 5 MB limit.",
+    "sources": [
+      "https://www.browserbase.com/pricing",
+      "https://www.browserbase.com/blog/free-plan",
+      "https://docs.browserbase.com/platform/fetch/overview"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "browserbeam",
+    "name": "Browserbeam",
+    "categories": [
+      "browser-infrastructure",
+      "url-fetch",
+      "web-scraping"
+    ],
+    "offer": "trial",
+    "allowance": "5,000 trial credits; no recurring refill or expiry established.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Runtime, proxy traffic, AI selectors and CAPTCHA operations consume credits at different rates. Not equivalent to 5,000 page fetches.",
+    "sources": [
+      "https://browserbeam.com/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "apify",
+    "name": "Apify",
+    "categories": [
+      "web-scraping",
+      "browser-infrastructure"
+    ],
+    "offer": "recurring",
+    "allowance": "$5 in platform usage each month.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Actor fees, compute, storage and proxies can all consume the balance. An open-source Actor is not necessarily free to run on the hosted platform.",
+    "sources": [
+      "https://apify.com/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "scrapingbee",
+    "name": "ScrapingBee",
+    "categories": [
+      "web-search",
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "trial",
+    "allowance": "1,000 free API credits to try the service.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Rendering, premium proxies, extraction and dedicated APIs can have different credit multipliers. No recurring trial reset is promised.",
+    "sources": [
+      "https://www.scrapingbee.com/pricing/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "scraperapi",
+    "name": "ScraperAPI",
+    "categories": [
+      "web-search",
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "trial",
+    "allowance": "5,000 API credits during a 7-day trial.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Credits are not a universal count of successful URLs; request features can change cost. No recurring free API balance established on this page.",
+    "sources": [
+      "https://www.scraperapi.com/pricing/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "browserless",
+    "name": "Browserless",
+    "categories": [
+      "browser-infrastructure",
+      "url-fetch",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "1,000 units/month; two concurrent browsers, two-minute maximum sessions.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Units meter runtime and optional services; proxy use consumes extra units. Not 1,000 guaranteed pages.",
+    "sources": [
+      "https://www.browserless.io/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "browser-use",
+    "name": "Browser Use Cloud",
+    "categories": [
+      "browser-infrastructure"
+    ],
+    "offer": "trial",
+    "allowance": "$1 signup credit per person; never expires.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Cloud browsers, model inference and network traffic are metered. The MIT local harness is a separate self-hosted option, not unlimited hosted API access.",
+    "sources": [
+      "https://browser-use.com/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "hyperbrowser",
+    "name": "Hyperbrowser",
+    "categories": [
+      "browser-infrastructure",
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "trial",
+    "allowance": "5,000 starter credits with a free account.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Vendor equates this to 50 browser hours or 5,000 fetched pages at base rates; one shared balance, not both. No monthly refill stated.",
+    "sources": [
+      "https://www.hyperbrowser.ai/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "kernel",
+    "name": "Kernel",
+    "categories": [
+      "browser-infrastructure"
+    ],
+    "offer": "recurring",
+    "allowance": "$5 in browser usage credits/month; five concurrent browsers.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "The free plan is $0/month plus usage costs beyond included credit. Paid hobbyist allowances are not free-plan grants.",
+    "sources": [
+      "https://www.kernel.sh/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "zyte",
+    "name": "Zyte API",
+    "categories": [
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "trial",
+    "allowance": "$5 credit for a 30-day trial.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Success-based prices depend on the target and whether browser rendering is needed; no fixed request total.",
+    "sources": [
+      "https://www.zyte.com/pricing/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "oxylabs",
+    "name": "Oxylabs Web API",
+    "categories": [
+      "web-search",
+      "web-scraping",
+      "url-fetch",
+      "browser-infrastructure"
+    ],
+    "offer": "trial",
+    "allowance": "$5 welcome credit toward products.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Search, Scrape, proxies and Agent Browser share a product portfolio. Confirm welcome-credit expiry and product eligibility; not a monthly grant.",
+    "sources": [
+      "https://oxylabs.io/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "browse-ai",
+    "name": "Browse AI",
+    "categories": [
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "recurring",
+    "allowance": "50 credits/month; up to 50 pages or 500 rows.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "REST endpoints and integrations are included. Page/row accounting can reduce the number of tasks; two websites and three users on Free.",
+    "sources": [
+      "https://www.browse.ai/website-to-api",
+      "https://help.browse.ai/en/articles/11429429-how-do-plans-and-pricing-work"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "lightpanda",
+    "name": "Lightpanda Cloud",
+    "categories": [
+      "browser-infrastructure"
+    ],
+    "offer": "recurring",
+    "allowance": "10 browser hours/month; five concurrent sessions.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Explorer cloud plan; bring your own proxy. The open-source browser is a separate deployment route.",
+    "sources": [
+      "https://lightpanda.io/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "cloudflare-browser-run",
+    "name": "Cloudflare Browser Run",
+    "categories": [
+      "browser-infrastructure",
+      "url-fetch",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "Workers Free: 10 browser minutes/day and three concurrent browsers.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Free plan limits apply; paid Workers browser overages have separate rates.",
+    "notes": "Browser hours are shared by Quick Actions and browser sessions. Paid Workers includes a different allowance; model-driven extraction may involve other charges. This is distinct from Cloudflare Web Search API.",
+    "sources": [
+      "https://developers.cloudflare.com/browser-run/pricing/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "doubao-search",
+    "name": "Doubao Search (豆包搜索)",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "Reported official allowance: 500 calls/month shared per Volcengine account.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Volcengine account and service activation; identity checks and account eligibility require confirmation.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Search-indexed official material specifies a shared monthly allowance. The retrieved current Agent Plan page emphasizes AFP deductions; migration to Doubao Search changed access rules. Verify the allowance in the current console before budgeting.",
+    "sources": [
+      "https://docs.volcengine.com/docs/networked-search/networked-search?lang=zh",
+      "https://docs.volcengine.com/docs/ark/agent-plan-personal-search?lang=zh"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "andi",
+    "name": "Andi Search API",
+    "categories": [
+      "web-search",
+      "url-fetch"
+    ],
+    "offer": "trial",
+    "allowance": "$5 developer starter credit; one API key and 10 requests/second.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "The consumer search site is free separately. API credits are prepaid; auto top-up is available. No recurring developer starter grant established.",
+    "sources": [
+      "https://andiai.com/",
+      "https://docs.andiai.com/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "algolia",
+    "name": "Algolia Free Plan",
+    "categories": [
+      "site-search",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "10,000 search requests/month; 50,000 records and 5,000 crawls/month.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Application/site search over your indexed data, not an unrestricted public-web search engine. Grow plans have separate included usage and overage billing.",
+    "sources": [
+      "https://www.algolia.com/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "meilisearch",
+    "name": "Meilisearch Cloud",
+    "categories": [
+      "site-search"
+    ],
+    "offer": "trial",
+    "allowance": "14-day cloud trial; no card required.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Managed indexing/search over your own data. Self-hosted software and hosted cloud billing are separate.",
+    "sources": [
+      "https://www.meilisearch.com/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "voyage-ai",
+    "name": "Voyage AI retrieval models",
+    "categories": [
+      "embeddings",
+      "multimodal"
+    ],
+    "offer": "trial",
+    "allowance": "Current model tables list initial free token/pixel grants; amount depends on model.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Tables list 200M text tokens for current embedding/reranker families and 200M text tokens plus 150B pixels for listed multimodal models. Prose and legacy-model tables conflict on some model IDs; verify the specific model. Batch API does not use free-token balances.",
+    "sources": [
+      "https://docs.voyageai.com/docs/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "builtwith",
+    "name": "BuiltWith Free API",
+    "categories": [
+      "web-data"
+    ],
+    "offer": "ongoing",
+    "allowance": "Free technology-group summary lookups, limited to one request/second.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Returns group/category counts and update dates, not the full paid technology profile or lead-list API. Requires an API key; no universal unlimited-use claim.",
+    "sources": [
+      "https://api.builtwith.com/free-api"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "deepseek-search",
+    "name": "DeepSeek Search and Fetch",
+    "categories": [
+      "web-search",
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "none",
+    "allowance": "No standing free Search/Fetch allowance established.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Both endpoints cost $0.75/1,000 successful requests. Empty results, failures and timeouts are not billed; using tools from an agent still incurs endpoint charges.",
+    "sources": [
+      "https://api-docs.deepseek.com/guides/search/"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "tencent-search",
+    "name": "Tencent Yuanbao Search / WSA",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "none",
+    "allowance": "No standing free quota established in the current billing page.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Current page uses Yuanbao Search branding. Prepaid packages and postpaid usage are listed; TokenHub plugin trials are a different service.",
+    "sources": [
+      "https://cloud.tencent.com/document/product/1806/121798"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "kimi-search",
+    "name": "Kimi Web Search",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No recurring free search-tool quota established.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Web search adds CNY 0.03/call plus model tokens. A CNY 15 new-user voucher is offered to mainland-China mobile registrations for three months; coverage of the search surcharge is not explicitly established.",
+    "sources": [
+      "https://www.kimi.com/en/help/kimi-api/api-pricing",
+      "https://www.kimi.com/en/help/kimi-api/api-free-trial"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "kimi-trial",
+    "name": "Kimi API trial voucher",
+    "categories": [
+      "llm"
+    ],
+    "offer": "trial",
+    "allowance": "CNY 15 signup voucher, valid three months.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "New users registering with a mainland China mobile number.",
+    "overage": "Top-up balance is used after voucher exhaustion; requests return 403 if no balance remains.",
+    "notes": "Voucher is consumed before top-up balance. Do not count it as a guaranteed free Search API request quota.",
+    "sources": [
+      "https://www.kimi.com/en/help/kimi-api/api-free-trial"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "baidu-search",
+    "name": "Baidu AI Search",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "none",
+    "allowance": "Free resources mentioned in docs, but current grant amount and eligibility unresolved.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Current campaign sells discounted search packs; discounted paid usage is not free. Check console-specific trial resources. Do not apply unrelated image-search API allowances.",
+    "sources": [
+      "https://ai.baidu.com/ai-doc/AppBuilder/Imca18xc6",
+      "https://cloud.baidu.com/product/AI-SEARCH/campaign.html"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "liner",
+    "name": "Liner Search API",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "none",
+    "allowance": "No fixed current free developer quota established.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Public prepaid API pricing is separate from free consumer search. Reports of $15 activation credit were not corroborated in the reviewed official docs.",
+    "sources": [
+      "https://liner.com/developers/docs/pricing",
+      "https://liner.com/developers/docs/quick-start"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "webpeel",
+    "name": "WebPeel",
+    "categories": [
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "none",
+    "allowance": "Hosted API free allowance not established.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Official website returned HTTP 402 to research retrieval, and package page was blocked. These retrieval failures do not prove a paid-only product; confirm current terms separately.",
+    "sources": [
+      "https://webpeel.dev/",
+      "https://www.npmjs.com/package/webpeel"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus API",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "30 API/MCP calls/month on Free; shared allowance, resets on the first.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Free plan is capped at 30 calls with no additional paid usage; paid plans have different caps.",
+    "notes": "Academic paper search. API and MCP share the same plan balance; request complexity and paper count can affect consumption.",
+    "sources": [
+      "https://docs.consensus.app/api-get-started",
+      "https://help.consensus.app/en/articles/17680317-how-to-connect-consensus-to-other-ai-tools"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "octoparse",
+    "name": "Octoparse",
+    "categories": [
+      "web-scraping"
+    ],
+    "offer": "none",
+    "allowance": "No standing free hosted API allowance confirmed.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account and API key required; regional and identity conditions not confirmed.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Free desktop extraction is distinct from hosted API access. Pricing lists Data Export API on Standard and Advanced API on Professional; confirm trial API eligibility.",
+    "sources": [
+      "https://www.octoparse.com/pricing"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "ahrefs-test",
+    "name": "Ahrefs API test queries",
+    "categories": [
+      "web-data"
+    ],
+    "offer": "none",
+    "allowance": "Restricted sample queries exist, but standalone free-account API eligibility is unresolved.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "An API key is required; current free-test docs say users on a paid plan, while the introduction uses broader wording.",
+    "overage": "Check account billing settings before enabling paid usage.",
+    "notes": "Only vendor domains or keywords such as ahrefs, yep and firehose qualify for sample-query fee waivers. This is not a general free search quota. Confirm account eligibility before relying on it.",
+    "sources": [
+      "https://docs.ahrefs.com/en/api/docs/introduction",
+      "https://docs.ahrefs.com/en/api/docs/free-test-queries"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "felo-api",
+    "name": "Felo Search and Fetch APIs",
+    "categories": [
+      "web-search",
+      "url-fetch",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No reliable recurring free API allowance established; official material conflicts.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Felo API key and platform account; selected model trials are route-specific.",
+    "overage": "Current live API pricing describes prepaid service credits and paid usage.",
+    "notes": "Indexed official pricing advertises 200 daily credits, but the live pricing FAQ explicitly says no recurring free allowance. Keep unresolved pending confirmation. Consumer app plans are separate; selected model trials do not establish free search/fetch.",
+    "sources": [
+      "https://openapi.felo.ai/pricing",
+      "https://openapi.felo.ai/docs/faq/billing-and-credits",
+      "https://openapi.felo.ai/docs"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "brightdata-browser",
+    "name": "Bright Data Browser API",
+    "categories": [
+      "browser-infrastructure",
+      "url-fetch",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "Free tier lists 1 GB/month (also labeled 5K credits/month).",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account/API activation required; confirm product-specific account eligibility.",
+    "overage": "Check billing and spend limits; paid usage is a separate choice.",
+    "notes": "Bandwidth is the relevant browser unit; do not convert 5K credits into 5K browser sessions. Confirm whether product grants share an account pool.",
+    "sources": [
+      "https://brightdata.com/pricing/scraping-browser"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "brightdata-agent-browser",
+    "name": "Bright Data Agent Browser",
+    "categories": [
+      "browser-infrastructure"
+    ],
+    "offer": "none",
+    "allowance": "Free trial advertised, but its specific amount and recurring eligibility are not established.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Account/API activation required; confirm product-specific account eligibility.",
+    "overage": "Check billing and spend limits; paid usage is a separate choice.",
+    "notes": "Agent Browser page lists paid bandwidth pricing; Browser API pricing separately lists a free bandwidth tier. Confirm account entitlement rather than treating MCP search requests as free browser sessions.",
+    "sources": [
+      "https://brightdata.com/ai/agent-browser",
+      "https://brightdata.com/pricing/scraping-browser"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "brightdata-unlocker",
+    "name": "Bright Data Web Unlocker",
+    "categories": [
+      "url-fetch",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "5,000 requests/month.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Account/API activation required; confirm product-specific account eligibility.",
+    "overage": "Check billing and spend limits; paid usage is a separate choice.",
+    "notes": "Product-specific monthly free tier. Do not sum quotas across Bright Data products without confirming account pool sharing.",
+    "sources": [
+      "https://brightdata.com/pricing/web-unlocker"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "brightdata-scraper",
+    "name": "Bright Data Web Scraper API",
+    "categories": [
+      "web-scraping",
+      "url-fetch"
+    ],
+    "offer": "recurring",
+    "allowance": "5,000 records/month.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Register and activate the product; confirm eligible scrapers and account pool rules.",
+    "overage": "Paid plans meter successful records; configure spending limits.",
+    "notes": "Product-specific structured-data scraper tier. A record is not necessarily a page or request. Do not sum SERP, MCP, Unlocker and Scraper grants without verifying account pool sharing.",
+    "sources": [
+      "https://brightdata.com/pricing/web-scraper"
     ],
     "status": "verified",
     "checked_on": "2026-11-06"

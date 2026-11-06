@@ -1,0 +1,905 @@
+{
+  "audited_on": "2026-11-06",
+  "scope": "Union of awesome-ai-tools Search & Web Data selections and registry search, scraping, URL retrieval, browser infrastructure, site/enterprise search and retrieval-model candidates. Generic user research, shopping and search-visibility products are not treated as public web APIs.",
+  "fact_source": "resources.json",
+  "items": [
+    {
+      "registry_id": "ahrefs",
+      "name": "Ahrefs",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "ahrefs-test"
+      ]
+    },
+    {
+      "registry_id": "algolia",
+      "name": "Algolia",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "algolia"
+      ]
+    },
+    {
+      "registry_id": "ambersearch",
+      "name": "Amber",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "api-eligibility-unresolved",
+      "sources": [
+        "https://amber.de/en/"
+      ],
+      "note": "Enterprise app trial advertised; developer API inclusion and quota were not established."
+    },
+    {
+      "registry_id": "andi",
+      "name": "Andi",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "andi"
+      ]
+    },
+    {
+      "registry_id": "apify",
+      "name": "Apify",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "apify"
+      ]
+    },
+    {
+      "registry_id": "arc-search",
+      "name": "Arc Search",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://arc.net/"
+      ],
+      "note": "Consumer browser offering; no standalone developer search quota found."
+    },
+    {
+      "registry_id": "baidu-ai-search",
+      "name": "Baidu AI Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "baidu-search"
+      ]
+    },
+    {
+      "registry_id": "bing-search-apis",
+      "name": "Bing Search APIs",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "bing-search"
+      ]
+    },
+    {
+      "registry_id": "bocha",
+      "name": "博查 (Bocha)",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "bocha"
+      ]
+    },
+    {
+      "registry_id": "brave-search",
+      "name": "Brave Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "brave"
+      ]
+    },
+    {
+      "registry_id": "brave-search-api",
+      "name": "Brave Search API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "brave"
+      ]
+    },
+    {
+      "registry_id": "bright-data",
+      "name": "Bright Data",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "brightdata",
+        "brightdata-mcp",
+        "brightdata-browser",
+        "brightdata-unlocker",
+        "brightdata-scraper"
+      ]
+    },
+    {
+      "registry_id": "bright-data-agent-browser",
+      "name": "Bright Data Agent Browser",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "brightdata-agent-browser",
+        "brightdata-browser"
+      ]
+    },
+    {
+      "registry_id": "browse-ai",
+      "name": "Browse.ai",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "browse-ai"
+      ]
+    },
+    {
+      "registry_id": "browser-use",
+      "name": "Browser-Use",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "browser-use"
+      ]
+    },
+    {
+      "registry_id": "browserbase",
+      "name": "Browserbase",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "browserbase"
+      ]
+    },
+    {
+      "registry_id": "browserbeam",
+      "name": "Browserbeam",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "browserbeam"
+      ]
+    },
+    {
+      "registry_id": "browserless",
+      "name": "Browserless",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "browserless"
+      ]
+    },
+    {
+      "registry_id": "builtwith",
+      "name": "BuiltWith",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "builtwith"
+      ]
+    },
+    {
+      "registry_id": "ceramic-ai-search",
+      "name": "Ceramic.ai Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "ceramic"
+      ]
+    },
+    {
+      "registry_id": "claude-web-search",
+      "name": "Claude Web Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "claude-search"
+      ]
+    },
+    {
+      "registry_id": "cloudflare-browser-run",
+      "name": "Cloudflare Browser Run",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "cloudflare-browser-run"
+      ]
+    },
+    {
+      "registry_id": "consensus",
+      "name": "Consensus",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "consensus"
+      ]
+    },
+    {
+      "registry_id": "deepseek-api",
+      "name": "DeepSeek API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "deepseek-search"
+      ]
+    },
+    {
+      "registry_id": "dia-browser",
+      "name": "Dia Browser",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://www.diabrowser.com/"
+      ],
+      "note": "Consumer browser; free download is not a developer Search/Fetch API grant."
+    },
+    {
+      "registry_id": "doubao-search",
+      "name": "Doubao Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "doubao-search"
+      ]
+    },
+    {
+      "registry_id": "exa",
+      "name": "Exa",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "exa"
+      ]
+    },
+    {
+      "registry_id": "felo",
+      "name": "Felo",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "felo-api"
+      ]
+    },
+    {
+      "registry_id": "firecrawl",
+      "name": "Firecrawl",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "firecrawl"
+      ]
+    },
+    {
+      "registry_id": "glean",
+      "name": "Glean",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://www.glean.com/"
+      ],
+      "note": "Enterprise APIs are advertised; no standing public free API grant established."
+    },
+    {
+      "registry_id": "glm-web-search",
+      "name": "GLM Web Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "glm-search"
+      ]
+    },
+    {
+      "registry_id": "google-custom-search-json-api",
+      "name": "Custom Search JSON API",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "google-cse"
+      ]
+    },
+    {
+      "registry_id": "google-gemini-api",
+      "name": "Google Gemini API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "gemini-grounding",
+        "gemini-grounding-free"
+      ]
+    },
+    {
+      "registry_id": "hyperbrowser",
+      "name": "Hyperbrowser",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "hyperbrowser"
+      ]
+    },
+    {
+      "registry_id": "iask",
+      "name": "iAsk",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://iask.ai/"
+      ],
+      "note": "Free consumer answer interface; no public developer API allowance established."
+    },
+    {
+      "registry_id": "jina-ai",
+      "name": "Jina AI",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "jina-key"
+      ]
+    },
+    {
+      "registry_id": "jina-reader",
+      "name": "Jina Reader",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "jina-reader",
+        "jina-key"
+      ]
+    },
+    {
+      "registry_id": "keenable",
+      "name": "Keenable",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "keenable"
+      ]
+    },
+    {
+      "registry_id": "kernel",
+      "name": "Kernel",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "kernel"
+      ]
+    },
+    {
+      "registry_id": "kimi-search-api",
+      "name": "Kimi Search API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "kimi-search",
+        "kimi-trial"
+      ]
+    },
+    {
+      "registry_id": "komo",
+      "name": "Komo",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://komo.ai/pricing"
+      ],
+      "note": "Consumer daily credits do not establish developer API entitlement."
+    },
+    {
+      "registry_id": "lightpanda",
+      "name": "Lightpanda",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "lightpanda"
+      ]
+    },
+    {
+      "registry_id": "liner",
+      "name": "Liner",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "liner"
+      ]
+    },
+    {
+      "registry_id": "linkup",
+      "name": "Linkup",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "linkup"
+      ]
+    },
+    {
+      "registry_id": "meilisearch",
+      "name": "Meilisearch",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "meilisearch"
+      ]
+    },
+    {
+      "registry_id": "mistral-websearch",
+      "name": "Mistral Websearch",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "mistral-search"
+      ]
+    },
+    {
+      "registry_id": "neeva-search",
+      "name": "Neeva",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "legacy-product",
+      "sources": [
+        "https://www.snowflake.com/en/blog/snowflake-acquires-neeva-to-accelerate-search-in-the-data-cloud-through-generative-ai/"
+      ],
+      "note": "Acquisition/history entry; no current standalone free Neeva API grant established."
+    },
+    {
+      "registry_id": "nimbleway",
+      "name": "Nimble",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "nimble"
+      ]
+    },
+    {
+      "registry_id": "octoparse",
+      "name": "Octoparse",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "octoparse"
+      ]
+    },
+    {
+      "registry_id": "onyx",
+      "name": "Onyx",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "api-eligibility-unresolved",
+      "sources": [
+        "https://onyx.app/pricing"
+      ],
+      "note": "Cloud trial and self-hosted software exist; trial API allowance and external model costs unresolved."
+    },
+    {
+      "registry_id": "openai-web-search",
+      "name": "OpenAI Web Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "openai-search"
+      ]
+    },
+    {
+      "registry_id": "openrouter-web-search",
+      "name": "OpenRouter Web Search",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "openrouter-search"
+      ]
+    },
+    {
+      "registry_id": "oxylabs",
+      "name": "Oxylabs",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "oxylabs"
+      ]
+    },
+    {
+      "registry_id": "parallel",
+      "name": "Parallel AI",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "parallel"
+      ]
+    },
+    {
+      "registry_id": "perplexity",
+      "name": "Perplexity",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "perplexity"
+      ]
+    },
+    {
+      "registry_id": "perplexity-comet",
+      "name": "Perplexity Comet",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://www.perplexity.ai/comet"
+      ],
+      "note": "Consumer browser; use the separately reviewed Perplexity Search API for developer pricing."
+    },
+    {
+      "registry_id": "perplexity-search-api",
+      "name": "Perplexity Search API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "perplexity"
+      ]
+    },
+    {
+      "registry_id": "phind",
+      "name": "Phind",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "retrieval-blocked",
+      "sources": [
+        "https://www.phind.com/"
+      ],
+      "note": "Official home returned 404 to retrieval; current API availability and grants unresolved."
+    },
+    {
+      "registry_id": "scraperapi",
+      "name": "ScraperAPI",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "scraperapi"
+      ]
+    },
+    {
+      "registry_id": "scrapingbee",
+      "name": "ScrapingBee",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "scrapingbee"
+      ]
+    },
+    {
+      "registry_id": "screaming-frog-seo-spider",
+      "name": "Screaming Frog SEO Spider",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://www.screamingfrog.co.uk/seo-spider/pricing/"
+      ],
+      "note": "Desktop crawl license is distinct from a free hosted page-retrieval API."
+    },
+    {
+      "registry_id": "scrunch-ai",
+      "name": "Scrunch AI",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "outside-retrieval-api-scope",
+      "sources": [
+        "https://scrunch.com/"
+      ],
+      "note": "Search visibility/crawler analytics rather than a general search or page-fetch API."
+    },
+    {
+      "registry_id": "search1-api",
+      "name": "Search1 API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "search1"
+      ]
+    },
+    {
+      "registry_id": "semrush",
+      "name": "Semrush",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://www.semrush.com/kb/5-api"
+      ],
+      "note": "Marketing/SEO data API; consumer trial does not establish a free developer quota."
+    },
+    {
+      "registry_id": "serpapi",
+      "name": "SerpApi",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "serpapi"
+      ]
+    },
+    {
+      "registry_id": "serper",
+      "name": "Serper",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "serper"
+      ]
+    },
+    {
+      "registry_id": "strawberrybrowser",
+      "name": "Strawberry",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://strawberrybrowser.com/"
+      ],
+      "note": "Desktop AI browser; no standing public Search/Fetch API grant established."
+    },
+    {
+      "registry_id": "tavily",
+      "name": "Tavily",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "tavily"
+      ]
+    },
+    {
+      "registry_id": "tencent-web-search",
+      "name": "Tencent Cloud Web Search API",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "tencent-search"
+      ]
+    },
+    {
+      "registry_id": "tiny-fish",
+      "name": "TinyFish",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "tinysearch",
+        "tinyfetch"
+      ]
+    },
+    {
+      "registry_id": "tinyfish-fetch",
+      "name": "TinyFish Fetch",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "tinyfetch"
+      ]
+    },
+    {
+      "registry_id": "trakkr",
+      "name": "Trakkr",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "outside-retrieval-api-scope",
+      "sources": [
+        "https://trakkr.ai/"
+      ],
+      "note": "Brand/search visibility and crawler analytics, not a general retrieval API."
+    },
+    {
+      "registry_id": "voyage-ai",
+      "name": "Voyage AI",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "voyage-ai"
+      ]
+    },
+    {
+      "registry_id": "webpeel",
+      "name": "WebPeel",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "webpeel"
+      ]
+    },
+    {
+      "registry_id": "xai-web-search",
+      "name": "xAI Web Search",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "xai-search"
+      ]
+    },
+    {
+      "registry_id": "yep",
+      "name": "Yep",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [],
+      "finding": "api-eligibility-unresolved",
+      "sources": [
+        "https://yep.com/"
+      ],
+      "note": "Consumer search site had no readable developer terms; do not equate website search with free API access."
+    },
+    {
+      "registry_id": "you-com",
+      "name": "You.com",
+      "catalogs": [
+        "registry",
+        "awesome-ai-tools"
+      ],
+      "offer_ids": [
+        "you",
+        "you-signup"
+      ]
+    },
+    {
+      "registry_id": "zeta-alpha",
+      "name": "Zeta Alpha",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [],
+      "finding": "no-free-api-established",
+      "sources": [
+        "https://www.zeta-alpha.com/pricing"
+      ],
+      "note": "Free open-access research UI is distinct from enterprise API integration."
+    },
+    {
+      "registry_id": "zyte",
+      "name": "Zyte",
+      "catalogs": [
+        "registry"
+      ],
+      "offer_ids": [
+        "zyte"
+      ]
+    }
+  ]
+}

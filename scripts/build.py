@@ -8,6 +8,8 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = {'web-search': 'Web Search', 'web-scraping': 'Web Scraping',
+              'url-fetch': 'URL Fetch', 'browser-infrastructure': 'Browser Infrastructure',
+              'site-search': 'Site Search', 'web-data': 'Web Data',
               'llm': 'LLM', 'multimodal': 'Multimodal', 'embeddings': 'Embeddings'}
 OFFERS = {'ongoing': 'Ongoing free access', 'recurring': 'Recurring free quota',
           'trial': 'One-time trial', 'application': 'Application / promotion', 'none': 'No free offer reported'}
@@ -46,7 +48,31 @@ def fresh(r):
     return r['status'] == 'verified' and (date.today() - date.fromisoformat(r['checked_on'])).days <= 90
 
 
+def read_audit(rows):
+    """Coverage contains references, never a second copy of offer terms."""
+    path = ROOT / 'data/search-audit.json'
+    if not path.exists():
+        return None
+    audit = json.loads(path.read_text(encoding='utf-8'))
+    assert audit['fact_source'] == 'resources.json'
+    assert date.fromisoformat(audit['audited_on']) <= date.today()
+    ids = {r['id'] for r in rows}
+    seen = set()
+    for item in audit['items']:
+        assert item['registry_id'] not in seen, 'Duplicate audit candidate'
+        seen.add(item['registry_id'])
+        assert set(item['catalogs']) <= {'registry', 'awesome-ai-tools'}
+        if item['offer_ids']:
+            assert set(item) == {'registry_id', 'name', 'catalogs', 'offer_ids'}, 'Linked coverage must not duplicate offer facts'
+            assert set(item['offer_ids']) <= ids, 'Dangling canonical offer reference'
+        else:
+            assert item['finding'] and item['note'] and item['sources']
+            assert all(urlparse(s).scheme == 'https' and urlparse(s).netloc for s in item['sources'])
+    return audit
+
+
 def render(rows):
+    audit = read_audit(rows)
     active = [r for r in rows if fresh(r)]
     pending = [r for r in rows if r['status'] in {'verified', 'pending'} and not fresh(r)]
     paid = [r for r in rows if r['status'] == 'not-free']
@@ -61,7 +87,8 @@ def render(rows):
     for slug, title in CATEGORIES.items():
         out.append(f'- [{title}](#{slug})')
     out += ['- [Browse by conditions](#browse-by-conditions)', '- [Pending review](#pending-review)',
-            '- [No confirmed free offer](#no-confirmed-free-offer)', '- [Retired offers](#retired-offers)', '',
+            '- [No confirmed free offer](#no-confirmed-free-offer)', '- [Retired offers](#retired-offers)',
+            '- [Search and fetch audit coverage](#search-and-fetch-audit-coverage)', '',
             '## How to read this list', '',
             'Free access and signup conditions are independent. Ongoing free access can still require registration, have rate limits, or restrict eligible regions. Unknown means not confirmed, not unrestricted.', '',
             'Verified means the core offer was reviewed in official material on the listed date; it does not mean we tested signup or API calls. Entries older than 90 days move to pending review when regenerated. Credits from different providers are not directly comparable. Read the details before enabling billing or paid fallbacks.', '',
@@ -112,6 +139,21 @@ def render(rows):
     out += ['## Retired offers', '']
     for r in retired:
         out += detail(r, True)
+    out += ['## Search and fetch audit coverage', '']
+    if audit:
+        out += [f'Catalog audit dated {audit["audited_on"]}: {len(audit["items"])} candidates from registry and awesome-ai-tools. Quotas are maintained only in the linked canonical offers; this coverage index records decisions for every candidate.', '',
+                'Scope: public-web search, URL retrieval, scraping, browser infrastructure and adjacent site/enterprise retrieval. Consumer search apps are checked separately; a free website or local tool does not establish a hosted API grant.', '',
+                '| Candidate | Canonical offer or review finding |', '|---|---|']
+        by_id = {r['id']: r for r in rows}
+        for item in audit['items']:
+            if item['offer_ids']:
+                finding = ', '.join(f'[{by_id[id]["name"]}](#{id})' for id in item['offer_ids'])
+            else:
+                finding = f'{item["finding"]}: {item["note"]} [Official source]({item["sources"][0]})'
+            out.append(f'| {cell(item["name"])} | {cell(finding)} |')
+        out += ['', 'Machine-readable coverage: [data/search-audit.json](data/search-audit.json). Audit findings are based on public documentation; no account creation or authenticated calls were performed.', '']
+    else:
+        out += ['No coverage audit has been recorded yet.', '']
     out += ['## Contribute', '',
             'See [CONTRIBUTING.md](CONTRIBUTING.md) for the data format, evidence requirements and review policy. No affiliate links. Never submit API keys or personal account details.', '',
             '## License', '', '[MIT](LICENSE). Provider services remain subject to their own terms.', '']

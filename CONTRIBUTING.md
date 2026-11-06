@@ -11,6 +11,8 @@ Edit `data/resources.json`, the sole editable source of resource facts. Never ed
 
 Each record describes one offer; a provider may have multiple distinct offers. Use a stable unique ID. Assign any applicable categories: `web-search`, `web-scraping`, `llm`, `multimodal`, `embeddings`. Add new categories in the generator only when there are real entries.
 
+Use `url-fetch` for known-URL retrieval, `browser-infrastructure` for hosted browser sessions, `site-search` for search over a customer's own index, and `web-data` for related metadata APIs. Never equate these with a general public-web search API. The candidate coverage index in `data/search-audit.json` stores only canonical offer IDs for listed resources; quota facts remain exclusively in `data/resources.json`. Candidates without an established API offer may instead carry a sourced review finding. Do not infer absence of a free tier from a failed page fetch.
+
 Offer values: `ongoing` (a standing free service, still subject to limits), `recurring` (a resetting allowance), `trial` (one-time credits), `application` (requires approval or a promotion), `none` (no free offer reported). Never label a service unlimited without explicit evidence. Self-hosting and open source do not imply free infrastructure.
 
 Registration and credit-card fields independently use `required`, `not-required`, or `unknown`. Explain phone, identity, student, organization and regional requirements in eligibility. Do not infer card requirements from API-key or Cloud-project requirements. Record quotas, reset/expiry, shared balances and overage behavior separately.
