@@ -31,7 +31,7 @@ Free access and signup conditions are independent. Ongoing free access can still
 
 Verified means the core offer was reviewed in official material on the listed date; it does not mean we tested signup or API calls. Entries older than 90 days move to pending review when regenerated. Credits from different providers are not directly comparable. Read the details before enabling billing or paid fallbacks.
 
-20 reviewed offers; 13 pending; 6 with no confirmed free offer; 1 retired. A provider may offer more than one distinct free route.
+21 reviewed offers; 13 pending; 6 with no confirmed free offer; 1 retired. A provider may offer more than one distinct free route.
 
 ## Web Search
 
@@ -50,6 +50,7 @@ Verified means the core offer was reviewed in official material on the listed da
 | [SerpApi](#serpapi) | 250 searches/month; 50 searches/hour. | Recurring free quota | Required | Not required | 2026-11-06 |
 | [Tavily](#tavily) | $0 plan: 1,000 credits/month; resets on the first day of the month. | Recurring free quota | Required | Not required | 2026-11-06 |
 | [You.com free MCP](#you) | 100 search queries/day via the free MCP profile. | Recurring free quota | Not required | Not required | 2026-11-06 |
+| [Ceramic Search](#ceramic) | 1,000 free queries at signup; no recurring reset promised. | One-time trial | Required | Not required | 2026-11-06 |
 | [Jina Search Foundation (free key)](#jina-key) | New keys include 10M free tokens shared across products; expiry not confirmed. | One-time trial | Unknown | Unknown | 2026-11-06 |
 | [Search1API](#search1) | 100 signup credits, no expiry; no monthly replenishment. | One-time trial | Required | Not required | 2026-11-06 |
 | [Serper](#serper) | 2,500 starter queries; no recurring reset is promised publicly. | One-time trial | Required | Not required | 2026-11-06 |
@@ -95,10 +96,10 @@ Verified means the core offer was reviewed in official material on the listed da
 These views link to the same canonical offers; they do not maintain separate quotas.
 
 - **No registration:** [Jina Reader (no key)](#jina-reader), [You.com free MCP](#you), [Parallel Personal MCP](#parallel-mcp), [Keenable keyless access](#keenable-keyless)
-- **No credit card:** [Tavily](#tavily), [Exa](#exa), [Firecrawl](#firecrawl), [Jina Reader (no key)](#jina-reader), [Google Gemini API](#gemini), [You.com free MCP](#you), [SerpApi](#serpapi), [Serper](#serper), [Google Custom Search JSON API](#google-cse), [Parallel Personal MCP](#parallel-mcp), [Keenable Search API](#keenable), [Keenable keyless access](#keenable-keyless), [Search1API](#search1), [Gemini Flash free-tier grounding](#gemini-grounding-free)
+- **No credit card:** [Tavily](#tavily), [Exa](#exa), [Firecrawl](#firecrawl), [Jina Reader (no key)](#jina-reader), [Google Gemini API](#gemini), [You.com free MCP](#you), [SerpApi](#serpapi), [Serper](#serper), [Google Custom Search JSON API](#google-cse), [Parallel Personal MCP](#parallel-mcp), [Keenable Search API](#keenable), [Keenable keyless access](#keenable-keyless), [Search1API](#search1), [Gemini Flash free-tier grounding](#gemini-grounding-free), [Ceramic Search](#ceramic)
 - **Ongoing free access:** [Jina Reader (no key)](#jina-reader), [Google Gemini API](#gemini), [OpenRouter free models](#openrouter), [Zhipu GLM-4.7-Flash](#glm-flash), [Parallel Personal MCP](#parallel-mcp), [Keenable keyless access](#keenable-keyless)
 - **Recurring free quota:** [Tavily](#tavily), [Exa](#exa), [Firecrawl](#firecrawl), [You.com free MCP](#you), [Parallel Developer API](#parallel), [Brave Search API](#brave), [SerpApi](#serpapi), [Google Custom Search JSON API](#google-cse), [Keenable Search API](#keenable), [Gemini Google Search grounding](#gemini-grounding), [Gemini Flash free-tier grounding](#gemini-grounding-free)
-- **One-time trial:** [Jina Search Foundation (free key)](#jina-key), [Serper](#serper), [Search1API](#search1)
+- **One-time trial:** [Jina Search Foundation (free key)](#jina-key), [Serper](#serper), [Search1API](#search1), [Ceramic Search](#ceramic)
 - **Application / promotion:** No reviewed entries yet.
 
 ## Offer details
@@ -282,6 +283,15 @@ These views link to the same canonical offers; they do not maintain separate quo
 - Overage: Free-tier limits apply; switching to a paid project changes model and grounding billing. Do not assume 500/day applies to every model.
 - Notes: The official tool-pricing table lists a free-tier allowance for Flash/Flash-Lite; Gemini 3+ paid-tier grounding follows a different policy. Model inference has its own free-tier rate limits and data-use terms.
 - Official sources: [Source 1](https://ai.google.dev/gemini-api/docs/pricing), [Source 2](https://ai.google.dev/gemini-api/docs/google-search)
+
+<a id="ceramic"></a>
+
+### Ceramic Search
+
+- Eligibility: Create an account and generate an API key. Regional or identity restrictions not confirmed.
+- Overage: Further pay-as-you-go usage is priced at $0.25/1K queries. Exhaustion behavior and automatic payment settings are not confirmed.
+- Notes: Official quickstart calls the signup grant 1,000 credits; pricing calls it 1,000 queries. Treat it as a one-time starter allowance. Free-credit expiry is not stated; Pro monthly resets do not establish a recurring free grant. Pay-as-you-go plan lists 20 QPS per organization.
+- Official sources: [Source 1](https://www.ceramic.ai/pricing), [Source 2](https://docs.ceramic.ai/api/search/quickstart)
 
 ## Pending review
 

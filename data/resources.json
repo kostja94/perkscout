@@ -794,5 +794,25 @@
     ],
     "status": "not-free",
     "checked_on": "2026-11-06"
+  },
+  {
+    "id": "ceramic",
+    "name": "Ceramic Search",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "trial",
+    "allowance": "1,000 free queries at signup; no recurring reset promised.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Create an account and generate an API key. Regional or identity restrictions not confirmed.",
+    "overage": "Further pay-as-you-go usage is priced at $0.25/1K queries. Exhaustion behavior and automatic payment settings are not confirmed.",
+    "notes": "Official quickstart calls the signup grant 1,000 credits; pricing calls it 1,000 queries. Treat it as a one-time starter allowance. Free-credit expiry is not stated; Pro monthly resets do not establish a recurring free grant. Pay-as-you-go plan lists 20 QPS per organization.",
+    "sources": [
+      "https://www.ceramic.ai/pricing",
+      "https://docs.ceramic.ai/api/search/quickstart"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
   }
 ]
