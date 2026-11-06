@@ -1,0 +1,506 @@
+[
+  {
+    "id": "tavily",
+    "name": "Tavily",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "$0 plan: 1,000 credits/month; resets on the first day of the month.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Free-plan requests stop until reset or upgrade.",
+    "notes": "Search, extract and crawl share credits; request costs vary by operation.",
+    "sources": [
+      "https://www.tavily.com/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "exa",
+    "name": "Exa",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "$10/month plus a one-time $10 onboarding bonus.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "Search and content retrieval; do not convert dollar credits to a universal request count.",
+    "sources": [
+      "https://exa.ai/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "firecrawl",
+    "name": "Firecrawl",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "1,000 credits/month: up to 500 searches or 1,000 scraped pages.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "Free plan lists two concurrent requests; operations share the same balance.",
+    "sources": [
+      "https://www.firecrawl.dev/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "jina-reader",
+    "name": "Jina Reader (no key)",
+    "categories": [
+      "web-scraping"
+    ],
+    "offer": "ongoing",
+    "allowance": "20 requests/minute without an API key.",
+    "registration": "not-required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Rate limits apply; anonymous access has no payment method attached.",
+    "notes": "Hosted URL-to-text API. Rate-limited, not unlimited. Key-based products have separate balances.",
+    "sources": [
+      "https://jina.ai/reader/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "jina-key",
+    "name": "Jina Search Foundation (free key)",
+    "categories": [
+      "web-search",
+      "web-scraping",
+      "embeddings"
+    ],
+    "offer": "trial",
+    "allowance": "New keys include 10M free tokens shared across products; expiry not confirmed.",
+    "registration": "unknown",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "Reader: 500 RPM; search: 100 RPM; embeddings: 100 RPM and 100K TPM. These are rate ceilings, not recurring token grants. Includes reranking; image embeddings depend on the chosen model.",
+    "sources": [
+      "https://jina.ai/reader/"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "gemini",
+    "name": "Google Gemini API",
+    "categories": [
+      "llm",
+      "multimodal"
+    ],
+    "offer": "ongoing",
+    "allowance": "Free input/output for selected models, subject to model-specific quotas.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Free-tier quotas apply; enabling billing changes applicable rates.",
+    "notes": "Google account/project required. Supported regions, age restrictions and model availability apply. Free-tier content may be used to improve products. Multimodal input support does not mean every image/audio/video generation API is free.",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/billing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter free models",
+    "categories": [
+      "llm"
+    ],
+    "offer": "ongoing",
+    "allowance": "Selected models with a listed :free variant; limits and availability vary.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "Only models with a free catalog entry qualify. Paid fallbacks can incur charges; use only free fallbacks or openrouter/free.",
+    "sources": [
+      "https://openrouter.ai/docs/guides/routing/model-variants/free"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "glm-flash",
+    "name": "Zhipu GLM-4.7-Flash",
+    "categories": [
+      "llm"
+    ],
+    "offer": "ongoing",
+    "allowance": "Official announcement offers free API calls; account limits apply.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "China-based BigModel platform. Text input/output; phone and identity requirements need confirmation. GLM-4.5-Flash has been superseded.",
+    "sources": [
+      "https://www.zhipuai.cn/zh/news/148",
+      "https://docs.bigmodel.cn/cn/guide/models/free/glm-4.7-flash"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "bocha",
+    "name": "Bocha (博查)",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "application",
+    "allowance": "Promotional free credits may be offered; no fixed public grant confirmed.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "Official terms allow promotional credits and contacting support to request more. Pricing documentation could not be read during this review; confirm eligibility, amount, expiry and phone requirements.",
+    "sources": [
+      "https://open.bochaai.com/",
+      "https://open.bochaai.com/terms-of-service"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "searchx",
+    "name": "SearchX",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "3,000 queries/day (about 90K/month).",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Provider-reported; do not assume production reliability.",
+    "sources": [
+      "https://searchx.dev"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "unsearch",
+    "name": "UnSearch",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "5,000 queries/month.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Earlier notes describe Apache-2.0 licensing, Tavily/Exa compatibility and self-hosting. Verify repository/license; self-hosting still costs infrastructure and is not unlimited hosted access.",
+    "sources": [
+      "https://unsearch.dev"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "nimble",
+    "name": "Nimble",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "5,000 requests/month.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Search, extraction and structured output; confirm SDK and Web Search Agents availability.",
+    "sources": [
+      "https://www.nimbleway.com/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "you",
+    "name": "You.com",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "Earlier pricing: MCP 100 queries/day; FAQ: $100 signup credits, conflicting with an older $10 figure.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: MCP and HTTP API conditions differ. Earlier Web Search price: $5/1K. Prior notes mention keyless MCP and SOC 2; confirm current terms.",
+    "sources": [
+      "https://you.com/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "parallel",
+    "name": "Parallel AI",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "$5/month (earlier estimate: about 5,000 Search calls).",
+    "registration": "required",
+    "credit_card": "required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Prior notes require a credit card and describe keyless MCP and evidence provenance. Do not infer API registration conditions from MCP access.",
+    "sources": [
+      "https://parallel.ai"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "linkup",
+    "name": "Linkup",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "4,000 credits/month.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Standard and deep search have different costs.",
+    "sources": [
+      "https://www.linkup.so"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "brightdata",
+    "name": "Bright Data",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "5,000 credits/month.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Proxy-backed search/scraping; verify product-specific offer.",
+    "sources": [
+      "https://brightdata.com"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "searlo",
+    "name": "Searlo",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "trial",
+    "allowance": "3,000 signup credits, valid for one year.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Earlier paid bundle claim: as low as $0.20/1K; not verified. Search/SERP service.",
+    "sources": [
+      "https://searlo.tech/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "brave",
+    "name": "Brave Search API",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "$5/month (earlier estimate: about 1,000 requests).",
+    "registration": "required",
+    "credit_card": "required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Earlier notes conflict on whether the free tier was restricted in late 2025. Independent index; index-size claims are not verified.",
+    "sources": [
+      "https://brave.com/search/api/"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube Data API v3",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "Earlier notes: 100 search.list calls/day plus 10,000 units/day for other operations.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Requires a Google Cloud project and API credentials; that alone does not imply a card requirement. Confirm quota accounting and Pacific-time reset. For known channels consider playlistItems; quota extension policy needs review.",
+    "sources": [
+      "https://developers.google.com/youtube/v3/getting-started"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "serpapi",
+    "name": "SerpApi",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "250 queries/month; no rollover.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Hosted SERP retrieval; original notes focused on Google results.",
+    "sources": [
+      "https://serpapi.com/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "serper",
+    "name": "Serper",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "trial",
+    "allowance": "2,500 one-time queries.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Google SERP API; not a monthly allowance. Earlier speed/price superlatives were unsupported.",
+    "sources": [
+      "https://serper.dev"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "llmlayer",
+    "name": "LLMLayer",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "trial",
+    "allowance": "$1 in free credits.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Search, scraping and answer generation bundle; verify domain, terms and expiry.",
+    "sources": [
+      "https://llmlayer.com"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "google-cse",
+    "name": "Google Custom Search JSON API",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "recurring",
+    "allowance": "Earlier notes: 100 queries/day.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Earlier notes state closed to new customers and ending 2027-01-01. Confirm current eligibility and shutdown date before use.",
+    "sources": [
+      "https://developers.google.com/custom-search/v1/overview"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity API",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "none",
+    "allowance": "Earlier notes: no standard free API; prepaid pay-as-you-go.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Earlier notes date removal of Pro monthly $5 API credits to 2026-02-12; confirm. Answer synthesis is distinct from a free search API.",
+    "sources": [
+      "https://docs.perplexity.ai"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "fal",
+    "name": "fal.ai",
+    "categories": [
+      "multimodal"
+    ],
+    "offer": "application",
+    "allowance": "Earlier notes: no standard free tier; startup program $1K-$5K by application.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: Earlier Builder Grant $25-$250 was no longer shown. Program availability and eligibility need confirmation.",
+    "sources": [
+      "https://fal.ai"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "unifuncs",
+    "name": "UniFuncs",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "none",
+    "allowance": "Earlier notes: Web Search/Reader APIs are paid.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Not confirmed; consult provider signup and regional terms.",
+    "overage": "Not confirmed; check billing settings before enabling paid usage.",
+    "notes": "UNVERIFIED MIGRATION: A free Deep Research web UI does not imply a free API.",
+    "sources": [
+      "https://unifuncs.com"
+    ],
+    "status": "pending",
+    "checked_on": null
+  }
+]
