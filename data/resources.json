@@ -166,15 +166,15 @@
       "web-search"
     ],
     "offer": "application",
-    "allowance": "Promotional free credits may be offered; no fixed public grant confirmed.",
+    "allowance": "No guaranteed recurring free quota confirmed; promotional grants may be available.",
     "registration": "required",
     "credit_card": "unknown",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "Official terms allow promotional credits and contacting support to request more. Pricing documentation could not be read during this review; confirm eligibility, amount, expiry and phone requirements.",
+    "eligibility": "Registration required; phone, identity and regional restrictions not confirmed.",
+    "overage": "Prepaid service; the provider may stop service when the balance is insufficient.",
+    "notes": "Official terms describe prepaid usage and discretionary promotional credits. Contact support about grants; no fixed amount, reset, expiry or eligibility is promised there. The linked Feishu pricing page was inaccessible, so a quoted CNY 0.036/search price is not confirmed.",
     "sources": [
-      "https://open.bochaai.com/",
-      "https://open.bochaai.com/terms-of-service"
+      "https://open.bochaai.com/terms-of-service",
+      "https://open.bochaai.com/"
     ],
     "status": "pending",
     "checked_on": null
@@ -238,41 +238,43 @@
   },
   {
     "id": "you",
-    "name": "You.com",
+    "name": "You.com free MCP",
     "categories": [
       "web-search"
     ],
     "offer": "recurring",
-    "allowance": "Earlier pricing: MCP 100 queries/day; FAQ: $100 signup credits, conflicting with an older $10 figure.",
-    "registration": "required",
+    "allowance": "100 search queries/day via the free MCP profile.",
+    "registration": "not-required",
     "credit_card": "not-required",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: MCP and HTTP API conditions differ. Earlier Web Search price: $5/1K. Prior notes mention keyless MCP and SOC 2; confirm current terms.",
+    "eligibility": "Free MCP profile; no signup required.",
+    "overage": "The free profile has a daily limit; paid authenticated API usage is separate.",
+    "notes": "No account or API key. Use https://api.you.com/mcp?profile=free for you-search and you-discover. This is distinct from authenticated REST API trial credits.",
     "sources": [
-      "https://you.com/pricing"
+      "https://you.com/pricing",
+      "https://you.com/docs/agents/mcp-server"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "parallel",
-    "name": "Parallel AI",
+    "name": "Parallel Developer API",
     "categories": [
       "web-search"
     ],
     "offer": "recurring",
-    "allowance": "$5/month (earlier estimate: about 5,000 Search calls).",
+    "allowance": "$5/month per eligible organization, covering up to 5,000 Search or Extract requests.",
     "registration": "required",
     "credit_card": "required",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Prior notes require a credit card and describe keyless MCP and evidence provenance. Do not infer API registration conditions from MCP access.",
+    "eligibility": "Eligible organization with a card on file; one monthly grant per organization.",
+    "overage": "Usage above $5 is billed at standard rates. Configure spend limits and auto-reload deliberately.",
+    "notes": "Shared across APIs, not 5,000 calls plus another $5. Unused monthly credit expires; one payment card activates one organization. Marketplace and postpaid organizations are excluded. Signup bonuses are separate.",
     "sources": [
-      "https://parallel.ai"
+      "https://parallel.ai/pricing",
+      "https://parallel.ai/blog/free-tier-parallel"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "linkup",
@@ -338,17 +340,19 @@
       "web-search"
     ],
     "offer": "recurring",
-    "allowance": "$5/month (earlier estimate: about 1,000 requests).",
+    "allowance": "$5/month on the Search plan, equivalent to 1,000 searches at $5/1K.",
     "registration": "required",
     "credit_card": "required",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Earlier notes conflict on whether the free tier was restricted in late 2025. Independent index; index-size claims are not verified.",
+    "eligibility": "Register with a credit card; a refundable $0/$1 verification hold may apply. Attribute Brave Search API in the project website/about page.",
+    "overage": "To stay within the free grant, set prepaid amount to $0 and review usage limits. Additional funded usage is paid.",
+    "notes": "A standalone free plan is no longer offered. Free monthly credits still exist; the provider asks for project attribution. Do not combine credits across separate plans into one Search allowance.",
     "sources": [
-      "https://brave.com/search/api/"
+      "https://brave.com/search/api/",
+      "https://api-dashboard.search.brave.com/documentation/resources/help-feedback",
+      "https://brave.com/blog/most-powerful-search-api-for-ai/"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "youtube",
@@ -376,17 +380,18 @@
       "web-search"
     ],
     "offer": "recurring",
-    "allowance": "250 queries/month; no rollover.",
+    "allowance": "250 searches/month; 50 searches/hour.",
     "registration": "required",
     "credit_card": "not-required",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Hosted SERP retrieval; original notes focused on Google results.",
+    "eligibility": "Create an account and API key; the official 2026 hackathon guide confirms no card is needed.",
+    "overage": "The pricing FAQ offers manual or automatic early renewal; check account renewal settings.",
+    "notes": "Successful searches count; cached, failed and errored searches do not. Result count does not change the search unit.",
     "sources": [
-      "https://serpapi.com/pricing"
+      "https://serpapi.com/pricing",
+      "https://serpapi.github.io/serpapi-pyconza-hackathon-2026/index.html"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "serper",
@@ -395,17 +400,17 @@
       "web-search"
     ],
     "offer": "trial",
-    "allowance": "2,500 one-time queries.",
+    "allowance": "2,500 starter queries; no recurring reset is promised publicly.",
     "registration": "required",
     "credit_card": "not-required",
     "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Google SERP API; not a monthly allowance. Earlier speed/price superlatives were unsupported.",
+    "overage": "New queries stop when credits reach zero; only successful responses consume credits.",
+    "notes": "Budget this as a one-time starter allowance. The public page does not explicitly state renewal or free-credit expiry; do not confuse paid-pack validity with trial expiry.",
     "sources": [
-      "https://serper.dev"
+      "https://serper.dev/"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "llmlayer",
@@ -433,36 +438,36 @@
       "web-search"
     ],
     "offer": "recurring",
-    "allowance": "Earlier notes: 100 queries/day.",
+    "allowance": "100 queries/day for existing customers only, until shutdown on 2027-01-01.",
     "registration": "required",
-    "credit_card": "unknown",
-    "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Earlier notes state closed to new customers and ending 2027-01-01. Confirm current eligibility and shutdown date before use.",
+    "credit_card": "not-required",
+    "eligibility": "Existing Custom Search JSON API customers only; requires a configured engine and API key.",
+    "overage": "Additional requests require enabling billing: $5/1K, up to 10K/day.",
+    "notes": "Closed to new customers. This is a legacy Programmable Search API, not Gemini grounding.",
     "sources": [
       "https://developers.google.com/custom-search/v1/overview"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "verified",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "perplexity",
-    "name": "Perplexity API",
+    "name": "Perplexity Search API",
     "categories": [
       "web-search"
     ],
     "offer": "none",
-    "allowance": "Earlier notes: no standard free API; prepaid pay-as-you-go.",
+    "allowance": "No standard recurring free allowance confirmed in the pricing reviewed.",
     "registration": "required",
     "credit_card": "unknown",
     "eligibility": "Not confirmed; consult provider signup and regional terms.",
-    "overage": "Not confirmed; check billing settings before enabling paid usage.",
-    "notes": "UNVERIFIED MIGRATION: Earlier notes date removal of Pro monthly $5 API credits to 2026-02-12; confirm. Answer synthesis is distinct from a free search API.",
+    "overage": "Paid per successful request; successful empty results are billed.",
+    "notes": "Standard Search API: $5/1K successful requests; Fast Search: $1/1K. Up to five queries in one request count as one billed request. Distinct from Sonar and Agent APIs; no token fee on standalone Search.",
     "sources": [
-      "https://docs.perplexity.ai"
+      "https://docs.perplexity.ai/docs/getting-started/pricing"
     ],
-    "status": "pending",
-    "checked_on": null
+    "status": "not-free",
+    "checked_on": "2026-11-06"
   },
   {
     "id": "fal",
@@ -502,5 +507,292 @@
     ],
     "status": "pending",
     "checked_on": null
+  },
+  {
+    "id": "you-signup",
+    "name": "You.com API signup credits",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "trial",
+    "allowance": "Conflicting official pages advertise $10 and $100; amount unresolved.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Paid API usage can use auto top-up; confirm settings.",
+    "notes": "you.com/pricing currently shows $10; about.you.com/pricing advertises $100. These are signup claims, not monthly quotas; confirm the account grant and expiry before budgeting.",
+    "sources": [
+      "https://you.com/pricing",
+      "https://about.you.com/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "parallel-mcp",
+    "name": "Parallel Personal MCP",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "ongoing",
+    "allowance": "Free personal web search and fetch with variable limits; no fixed public quota.",
+    "registration": "not-required",
+    "credit_card": "not-required",
+    "eligibility": "Personal use through the free hosted MCP server.",
+    "overage": "Variable personal-use limits apply; paid API access is separate.",
+    "notes": "Personal MCP access is distinct from Developer API billing and its card-backed monthly credit.",
+    "sources": [
+      "https://parallel.ai/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "keenable",
+    "name": "Keenable Search API",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "recurring",
+    "allowance": "100,000 requests/month per organization; search and fetch each consume one credit.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Create an organization and API key; no card needed for the free allowance.",
+    "overage": "Returns 402 without credits. Optional auto top-up can charge immediately when enabled below its threshold; leave it off for a free-only budget.",
+    "notes": "Resets on the organization creation day (last day in shorter months). 10 RPS per organization. Paid usage after the allowance is $4/1K; not a guaranteed performance or uptime claim. Credit prices can be organization-specific; read the returned usage rather than assuming every operation always costs one credit.",
+    "sources": [
+      "https://keenable.ai/pricing",
+      "https://docs.keenable.ai/credits"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "keenable-keyless",
+    "name": "Keenable keyless access",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "ongoing",
+    "allowance": "Shared pool of 1,000 requests/hour per IP per endpoint; 10 RPS.",
+    "registration": "not-required",
+    "credit_card": "not-required",
+    "eligibility": "No API key or account; capacity shared by callers on the same public IP.",
+    "overage": "Hourly limits apply; 429 responses include retry guidance.",
+    "notes": "Anonymous access is separate from the account monthly grant and from paid x402 calls. Shared hosting shares the IP pool. HTTP, MCP and CLI can be tried without an account.",
+    "sources": [
+      "https://docs.keenable.ai/",
+      "https://keenable.ai/pricing"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "search1",
+    "name": "Search1API",
+    "categories": [
+      "web-search",
+      "web-scraping"
+    ],
+    "offer": "trial",
+    "allowance": "100 signup credits, no expiry; no monthly replenishment.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Returns 402 when balance cannot cover a request. Auto top-up is optional and off by default.",
+    "notes": "Basic search, news or crawl costs one credit; agentic search five; deep crawl twenty. Additional page extraction changes the cost.",
+    "sources": [
+      "https://s1.dev/pricing",
+      "https://s1.dev/docs/essentials/credits-and-limits"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "gemini-grounding",
+    "name": "Gemini Google Search grounding",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "recurring",
+    "allowance": "Gemini 3+ paid tier: first 5,000 search requests/month shared across models; search fee only.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Eligible Gemini paid-tier project and supported model; billing required.",
+    "overage": "Above the search grant, search fees plus model token fees apply.",
+    "notes": "This is not a zero-cost LLM pipeline: model tokens are billed. Search queries beyond the grant cost $14/1K. Free-tier availability varies by model; do not apply a legacy model allowance to every Gemini model. Default daily cap: 1,500 search queries/project; one prompt can trigger multiple billed queries.",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/google-search"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "claude-search",
+    "name": "Claude Web Search",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No standard recurring free search allowance confirmed.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Tool invocations and model tokens are billed.",
+    "notes": "Official API price is $10/1K searches plus token usage; failed searches are not billed. Free chat access is not a free developer API.",
+    "sources": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "openai-search",
+    "name": "OpenAI Web Search",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No standard recurring free search allowance confirmed.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Tool calls and applicable tokens are billed.",
+    "notes": "Standard web_search: $10/1K calls plus search-content tokens at model rates. Preview variants differ; free search-content tokens on some previews do not make the tool call free.",
+    "sources": [
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "xai-search",
+    "name": "xAI Web Search",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No standard recurring free search allowance confirmed.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Tool invocations and model tokens are billed.",
+    "notes": "Official pricing lists $5/1K web_search invocations plus model token costs. X Search has separate pricing.",
+    "sources": [
+      "https://docs.x.ai/developers/pricing"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "glm-search",
+    "name": "GLM Web Search",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No regular free search quota shown in the reviewed official price table.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Search calls billed separately from any applicable model usage.",
+    "notes": "Search-Std CNY 0.01/call; Search-Pro CNY 0.03; Sogou and Quark CNY 0.05. Free GLM model inference does not make search tools free.",
+    "sources": [
+      "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "https://docs.bigmodel.cn/cn/guide/tools/web-search"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "mistral-search",
+    "name": "Mistral Websearch",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "Standalone free search quota not established.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Search-tool billing and model costs need further confirmation.",
+    "notes": "Official tool docs confirm websearch support but the reviewed API price page did not establish a free search allowance or tool fee. Consumer free chat features do not establish API terms.",
+    "sources": [
+      "https://docs.mistral.ai/studio/agents/agent-tools/websearch",
+      "https://docs.mistral.ai/inference/pricing"
+    ],
+    "status": "pending",
+    "checked_on": null
+  },
+  {
+    "id": "bing-search",
+    "name": "Bing Search APIs",
+    "categories": [
+      "web-search"
+    ],
+    "offer": "none",
+    "allowance": "Retired on 2025-08-11.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "Check provider signup and regional terms.",
+    "overage": "Not applicable; service retired.",
+    "notes": "Legacy Bing Search APIs are unavailable. Azure grounding products are separate and must not inherit old free-tier claims.",
+    "sources": [
+      "https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement"
+    ],
+    "status": "retired",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "gemini-grounding-free",
+    "name": "Gemini Flash free-tier grounding",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "recurring",
+    "allowance": "Google Search: 500 requests/day shared by eligible Flash and Flash-Lite models on the free tier.",
+    "registration": "required",
+    "credit_card": "not-required",
+    "eligibility": "Eligible free-tier project, supported Flash/Flash-Lite model and region. Not available for Pro on the free tier; verify current model availability.",
+    "overage": "Free-tier limits apply; switching to a paid project changes model and grounding billing. Do not assume 500/day applies to every model.",
+    "notes": "The official tool-pricing table lists a free-tier allowance for Flash/Flash-Lite; Gemini 3+ paid-tier grounding follows a different policy. Model inference has its own free-tier rate limits and data-use terms.",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/google-search"
+    ],
+    "status": "verified",
+    "checked_on": "2026-11-06"
+  },
+  {
+    "id": "openrouter-search",
+    "name": "OpenRouter Web Search",
+    "categories": [
+      "web-search",
+      "llm"
+    ],
+    "offer": "none",
+    "allowance": "No standard free search allowance confirmed.",
+    "registration": "required",
+    "credit_card": "unknown",
+    "eligibility": "OpenRouter API account; provider and engine conditions apply.",
+    "overage": "Search adds charges even when paired with a free model.",
+    "notes": "The :online/web plugin explicitly incurs extra cost even on :free models. Free model inference and free web search are distinct offers.",
+    "sources": [
+      "https://openrouter.ai/docs/guides/features/plugins/web-search"
+    ],
+    "status": "not-free",
+    "checked_on": "2026-11-06"
   }
 ]

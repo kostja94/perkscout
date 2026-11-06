@@ -25,7 +25,7 @@ def validate(rows):
         ids.add(r['id'])
         assert r['categories'] and len(set(r['categories'])) == len(r['categories'])
         assert set(r['categories']) <= CATEGORIES.keys()
-        assert r['offer'] in OFFERS and r['status'] in {'verified', 'pending', 'retired'}
+        assert r['offer'] in OFFERS and r['status'] in {'verified', 'pending', 'not-free', 'retired'}
         assert r['registration'] in CONDITIONS and r['credit_card'] in CONDITIONS
         for key in fields - {'categories', 'sources', 'checked_on'}:
             assert isinstance(r[key], str) and r[key].strip(), f'Empty {key}'
@@ -34,6 +34,8 @@ def validate(rows):
             assert date.fromisoformat(r['checked_on']) <= date.today(), 'Future review date'
         if r['status'] == 'verified':
             assert r['checked_on'] and r['offer'] != 'none', 'Verified offer needs a date and free access'
+        if r['status'] in {'not-free', 'retired'}:
+            assert r['checked_on'] and r['offer'] == 'none', 'Excluded offers need a review date and no free offer'
 
 
 def cell(s):
@@ -46,7 +48,8 @@ def fresh(r):
 
 def render(rows):
     active = [r for r in rows if fresh(r)]
-    pending = [r for r in rows if r['status'] != 'retired' and not fresh(r)]
+    pending = [r for r in rows if r['status'] in {'verified', 'pending'} and not fresh(r)]
+    paid = [r for r in rows if r['status'] == 'not-free']
     retired = [r for r in rows if r['status'] == 'retired']
     out = ['---', 'title: PerkScout',
            'description: Discover free APIs, recurring quotas and developer perks by API type and access conditions.',
@@ -57,11 +60,12 @@ def render(rows):
            '## Browse', '']
     for slug, title in CATEGORIES.items():
         out.append(f'- [{title}](#{slug})')
-    out += ['- [Browse by conditions](#browse-by-conditions)', '- [Pending review](#pending-review)', '',
+    out += ['- [Browse by conditions](#browse-by-conditions)', '- [Pending review](#pending-review)',
+            '- [No confirmed free offer](#no-confirmed-free-offer)', '- [Retired offers](#retired-offers)', '',
             '## How to read this list', '',
             'Free access and signup conditions are independent. Ongoing free access can still require registration, have rate limits, or restrict eligible regions. Unknown means not confirmed, not unrestricted.', '',
             'Verified means the core offer was reviewed in official material on the listed date; it does not mean we tested signup or API calls. Entries older than 90 days move to pending review when regenerated. Credits from different providers are not directly comparable. Read the details before enabling billing or paid fallbacks.', '',
-            f'{len(active)} reviewed offers; {len(pending)} pending; {len(retired)} retired. A provider may offer more than one distinct free route.', '']
+            f'{len(active)} reviewed offers; {len(pending)} pending; {len(paid)} with no confirmed free offer; {len(retired)} retired. A provider may offer more than one distinct free route.', '']
     for slug, title in CATEGORIES.items():
         out += [f'## {title}', '', '| Offer | Free allowance | Offer type | Registration | Credit card | Reviewed |',
                 '|---|---|---|---|---|---|']
@@ -82,7 +86,10 @@ def render(rows):
     def detail(r, pending=False):
         result = [f'<a id="{r["id"]}"></a>', '', f'### {r["name"]}', '']
         if pending:
-            result += ['**Pending review — not a confirmed current free offer.**', '',
+            label = {'not-free': 'No confirmed free offer — excluded from the free catalog.',
+                     'retired': 'Retired — unavailable as a current API offer.'}.get(r['status'],
+                     'Pending review — not a confirmed current free offer.')
+            result += [f'**{label}**', '',
                        f'- Reported allowance: {r["allowance"]}',
                        f'- Reported offer type: {OFFERS[r["offer"]]}',
                        f'- Registration: {CONDITIONS[r["registration"]]}; credit card: {CONDITIONS[r["credit_card"]]}.',
@@ -98,10 +105,13 @@ def render(rows):
             'Earlier research claims are preserved here for follow-up, not presented as current recommendations. Some offers may have changed or ended. Provider names and URLs also require confirmation where noted.', '']
     for r in pending:
         out += detail(r, True)
-    if retired:
-        out += ['## Retired offers', '']
-        for r in retired:
-            out += detail(r, True)
+    out += ['## No confirmed free offer', '',
+            'Reviewed services without an established standing free offer. Account-specific promotions may differ. These are excluded from the free catalog.', '']
+    for r in paid:
+        out += detail(r, True)
+    out += ['## Retired offers', '']
+    for r in retired:
+        out += detail(r, True)
     out += ['## Contribute', '',
             'See [CONTRIBUTING.md](CONTRIBUTING.md) for the data format, evidence requirements and review policy. No affiliate links. Never submit API keys or personal account details.', '',
             '## License', '', '[MIT](LICENSE). Provider services remain subject to their own terms.', '']
